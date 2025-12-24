@@ -15,9 +15,10 @@ class TicketService
     {
         $defaults = [
             'show_logo' => true,
-            'header_text' => "MINI FARMACIA\nwww.minifarmacia.com",
-            'footer_text' => "¡Gracias por su compra!\nConserve este ticket para cambios.",
-            'paper_size' => '80mm', // 58mm, 80mm, letter
+            // Header specific request:
+            'header_text' => "Gracias por tu compra\nMini Farmacia México\nwww.minifarmacia.mx\ncontacto@minifarmacia.mx", 
+            'footer_text' => "", // Dynamic footer handling in view
+            'paper_size' => '80mm',
             'show_phone' => true,
             'show_address' => true,
         ];
