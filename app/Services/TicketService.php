@@ -46,7 +46,7 @@ class TicketService
             'branch' => $branch,
             'header' => nl2br($config['header_text']),
             'footer' => nl2br($config['footer_text']),
-            'logo' => $config['show_logo'] ? asset('images/logo_default.png') : null,
+            'logo' => $config['show_logo'] ? asset('images/logo.avif') : null,
             'width_css' => $this->getWidthCss($config['paper_size']),
         ];
 
